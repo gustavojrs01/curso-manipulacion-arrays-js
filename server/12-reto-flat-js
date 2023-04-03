@@ -1,0 +1,15 @@
+const zen =  [
+  "Beautiful is better than ugly",
+  "Explicit is better than implicit",
+  "Simple is better than complex",
+  "Complex is better than complicated",
+]
+
+// const  countWords = (array)=>{
+
+//     return array.flatMap(e=>e.split(' ').length).reduce((a,b)=>a+b, 0)
+// }
+
+const rta2 = zen.map(e=>e.split(' ').flat().length).reduce((a,b) => a+b ,0)
+
+console.log(rta2)
